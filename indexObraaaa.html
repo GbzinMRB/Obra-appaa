@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <title>Cadastro de E-mail - Obra App </title>
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFEBCD;
+            line-height: 1.6;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="email"], input[type="password"] {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        input[type="email"]:focus, input[type="password"]:focus {
+            outline: none;
+            border-color: #00CED1;
+            box-shadow: 0 0 5px rgba(0,206,209,0.3);
+        }
+
+        button {
+            background-color: #00CED1;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            width: fit-content;
+        }
+
+        button:hover {
+            background-color: #008B8B;
+        }
+
+        .forgot-password {
+            color: #00CED1;
+            text-decoration: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .forgot-password:hover {
+            color: #008B8B;
+            text-decoration: underline;
+        }
+
+        .recovery-field {
+            display: none;
+            margin-top: 1rem;
+        }
+
+        .recovery-field.active {
+            display: block;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                padding: 1rem;
+            }
+
+            input[type="email"], input[type="password"] {
+                max-width: 100%;
+            }
+    
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: left;
+            gap: 2rem;
+        }
+       
+    </style>
+    <head>
+        <body>
+            <main>
+                <section id="cadastro" aria-labelledby="cadastro-title">
+                    <h2 id="cadastro-title">Cadastre-se </h2>
+                  
+                    <form class="form-container">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required aria-describedby="email-desc">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                       <nav>
+                        <ul>
+                            <li><a href="#esquci minha senha">Esqueci Minha senha</a></li>
+                        </ul>
+                       </nav>
+                        <button type="submit">Cadastrar</button>
+                       
+                    </form>
+
+                    </nav>
+                </section>
+                
+            </main>
+        </body>
+    </head>
+    
+</html>
